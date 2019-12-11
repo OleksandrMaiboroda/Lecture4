@@ -17,6 +17,23 @@
             string += '\n';
         }
         alert(string);
+
+        string = '';
+        height = prompt('Введите желаемую высоту елочки');
+        for (var i = 1; i <= height; i++) {
+            for (var n = i; n < height; n++) {
+                string += ' ';
+            }
+            for (var m = 0; m < i; m++) {
+                if (m === 0) {
+                    string += '*';
+                } else {
+                    string += '**';
+                }
+            }
+            string += '\n';
+        }
+        alert(string);
     </script>
 </body>
 </html>
