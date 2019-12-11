@@ -8,12 +8,15 @@
 </head>
 <body>
     <script>
-        var string = '*';
+        var string = '';
         var height = prompt('Введите желаемую высоту треугольника');
         for (var i = 1; i <= height; i++) {
-            console.log(string);
-            string += '*';
+            for (var n = 0; n < i; n++) {
+                string += '*';
+            }
+            string += '\n';
         }
+        alert(string);
     </script>
 </body>
 </html>
